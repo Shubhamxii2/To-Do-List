@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>Revision Tracker 📅</h2>
+            <p id="current-date"></p>
+            
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add Your Topic Here">
+                <button onclick="addTask()">Add</button>
+            </div>
+            
+            <h3>My Topics</h3>
+            <input type="text" id="search-box" placeholder="Search Topics">
+            <select id="topic-dropdown">
+                <!-- Default Option Added -->
+                <option value="default" selected>Select a Topic</option>
+            </select>
+            <button class="remove-btn" onclick="removeSelectedTask()">Remove Selected Topic</button>
+            
+            <h3>Today's Scheduled Revisions</h3>
+            <ul id="today-list"></ul>
+            
+            <h3>Upcoming Revisions</h3>
+            <ul id="upcoming-list"></ul>
+            
+            <h3>Completed Revisions</h3>
+            <ul id="completed-list"></ul>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
